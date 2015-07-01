@@ -1,0 +1,218 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 370px;   /* prevents site from expanding to the edge of the screen */
+  
+  font-family: "Rokkitt",Helvetica,Arial,sans-serif;
+  color: #6B797F;
+  
+}
+
+img {
+  display: block;   /* takes out spaces between images */
+}
+
+header {
+  top: 0;  /* set the top to 0, the position to fixed, and the height to some px that matches the margin-top of the  div just below this to have a fixed header */
+  background: #2C4A47; /* dark green - matches the background color to the color of the image */
+  position: fixed;
+  height: 45px;
+  width: 370px;
+}
+
+#primary {
+  margin-top: 45px; /*must match the height of the fixed header above*/
+}
+#aiga {
+  background: #536463; /* grey - matches the background color to the color of the image */
+  padding-top: 7px;    /* grey should be a little sliver above and below the picture.  Ad padding */
+  padding-bottom: 7px;
+}
+
+#aiga img {
+  margin-left: auto;   /*margin left & right to auto centers a box element */
+  margin-right: auto;
+}
+
+.space {
+  padding: 50px;
+}
+
+h1 {
+  line-height: 40px;
+  font-size: 36px;
+  color: #384B62;
+}
+
+p {
+  line-height: 28px;
+  font-size: 20px;
+}
+
+.text {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0 auto;
+}
+
+#dashes {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: 10px;
+  background-image: url("./assets/part2/dash-horizontal.png");
+  background-repeat: repeat-x;
+}
+
+.straight-line {
+  width: 90%;
+}
+
+.talk-type {
+ color: #6C5029; 
+ line-height: 2em;
+ font-size: 16px;
+ font-family: "proxima-nova", Arial,sans-serif;
+ text-align: center;
+}
+
+.talk-type .space {
+  border-bottom: 2px #DDDDDD solid;
+}
+
+#talks-organized {
+  text-align: center;
+}
+
+.talk-type img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.talk-type ul {
+  list-style-type: none;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.talk-type h3 {
+  color: #6BA236;
+  font-size: 20px;
+  line-height: 1.45em;
+}
+
+
+#event-schedule {
+  background-image: url("./assets/part3/wood-bg.png");  /*wood repeats 13 times down.  Set height to 250*13 */
+  height: 3250px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#event-schedule img {
+  padding-top: 50px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#event-schedule .event {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#event-schedule h1 {
+  color: #EDC542; /*yellow text */
+  line-height: .50;
+  font-size: 45px;
+}
+
+#event-schedule h3 {
+  color: white;
+  font-size: 20px;
+  line-height: 1.4em;
+}
+
+#event-schedule .time {
+  font-family: "proxima-nova", Arial,sans-serif;
+  color: white;
+}
+
+#event-schedule .time h2 {
+  font-size: 22px;
+  line-height: 1.27em;
+}
+
+#event-schedule .time p {
+  font-size: 14px;
+  line-height: 1.71em;
+}
+
+#event-schedule .time .hour {
+  font-family: "Rokkitt",Helvetica,Arial,sans-serif;
+  color: white;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  border: #D1582C 2px solid; /*red circle */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 48px;
+}
+
+#event-schedule .time .hour div {
+  font-size: 18px;
+  color: white;
+  height: 20px;
+}
+
+#event-schedule .space {
+  padding: 25px;
+}
+
+
+#faq {
+  background: #CAECF8; /*background color light blue*/
+  color: #764C31; /*text color brown to match FAQ */
+
+}
+
+#faq #faq-img img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*#faq #faq-questions {
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}*/
+
+#faq #faq-questions .questions {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  background-image: url("./assets/part4/plus-bullet.png");
+  background-repeat: no-repeat;
+}
+
+#faq #faq-questions .questions p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Rokkitt",Helvetica,Arial,sans-serif;
+  font-size: 24px;
+}
+
+#faq .space {
+  padding: 10px;
+}
+
+#register img {
+  width: 100%;
+/*200 x 75 px*/
+}

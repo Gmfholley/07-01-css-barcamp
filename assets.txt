@@ -1,0 +1,48 @@
+Notes
+
+First page assets
+mountains.jpg
+date.png
+header_logo.png (top icon)
+hero_logo.png (Bar Camp)
+lake.png
+menu.png (right-hand menu icon)
+tree.png
+
+
+aiga.png (white)
+
+
+plus.png
+
+buttonLines.png
+bird.png
+
+
+
+page 2
+creative.png
+kitchen-sink.png
+technology.png
+entrepreneur.png
+
+
+page 3
+board.jpg
+schedule.png
+
+
+page4
+tower.png
+faq.png
+faqSky.png
+
+
+page 5
+clouds.png
+footer.png (mountains, lake and sky)
+signpost.png
+gmfooter.png
+sponsors.png
+hillFront.png
+hillBack.png

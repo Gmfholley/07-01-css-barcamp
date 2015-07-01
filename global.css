@@ -1,37 +1,148 @@
 body {
   padding: 0px;
-  margin: 0px;
-  width: 370px;   /* prevents site from expanding to the edge of the screen */
+  margin: 0px;   /* prevents site from expanding to the edge of the screen */
   
   font-family: "Rokkitt",Helvetica,Arial,sans-serif;
   color: #6B797F;
+  width: 100%;
   
 }
 
 img {
   display: block;   /* takes out spaces between images */
+  width: inherit;
 }
+
 
 header {
   top: 0;  /* set the top to 0, the position to fixed, and the height to some px that matches the margin-top of the  div just below this to have a fixed header */
   background: #2C4A47; /* dark green - matches the background color to the color of the image */
   position: fixed;
-  height: 45px;
-  width: 370px;
+  z-index: 10;
+  height: 60px;
+  width: 100%;
+}
+
+header img {
+  height: 60px;
+}
+header #menu {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 #primary {
-  margin-top: 45px; /*must match the height of the fixed header above*/
+  margin-top: 60px; /*must match the height of the fixed header above*/
+  width: inherit;
+} 
+
+#hero-container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  height: 435px;
+  max-width: 1400px;
+  
 }
+
+#mountains, #lake, #trees, #logo, #date {
+  position: absolute;
+  left: 50%;
+  margin-left: -403px;
+  height: inherit;
+/*  top: 0;
+  left: 0;
+  width: inherit;*/
+}
+
+#mountains {
+  z-index: 1;
+}
+
+#lake {
+  z-index: 2
+}
+
+#trees {
+  z-index: 3
+}
+
+#logo, #date {
+  z-index: 4;
+}
+
+#hero-container #mountains img, #hero-container #lake img, #hero-container #trees img {
+  height: inherit;
+}
+
+#hero-container #logo img {
+  height: 70%;
+  position: relative;
+  left: 132%;
+  top: 5%;
+}
+
+#hero-container #kaneko {
+  max-width: inherit;
+  position: relative;
+  top: 320px;
+  text-align: center;
+  color: #396C55;
+  z-index: 8;
+  line-height: 1.4em;
+  margin: 0px;
+  padding: 0px;
+}
+#hero-container #kaneko h3 {
+  font-size: 28px;
+  margin: inherit;
+  padding: inherit;
+}
+
+#hero-container #kaneko p {
+  font-size: 20px;
+  margin: inherit;
+  padding: inherit;
+}
+
+#hero-container #date img {
+  width: 50%;
+  position: relative;
+  left: 85%;
+  top: 310px;
+  
+}
+
+
 #aiga {
   background: #536463; /* grey - matches the background color to the color of the image */
   padding-top: 7px;    /* grey should be a little sliver above and below the picture.  Ad padding */
   padding-bottom: 7px;
+  max-height: 50px;
 }
 
 #aiga img {
   margin-left: auto;   /*margin left & right to auto centers a box element */
   margin-right: auto;
+  max-height: 50px;
+}
+
+#register-bird {
+  position: relative;
+  height: 100px;
+}
+
+#register-bird #bird{
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+}
+#register-bird #lines{
+  position: absolute;
+  left: 50%;
+  margin-left: -230px;
+  height: inherit;
 }
 
 .space {

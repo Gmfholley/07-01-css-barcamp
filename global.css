@@ -363,8 +363,25 @@ p {
   max-width: 450px;
 }
 
+#sponsor {
+  background: transparent url("./assets/page5/footer.png") repeat-x scroll center bottom / 1700px 1472px;
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+}
 
-#register img {
-  width: 100%;
+.sponsor-img {
+  position: absolute;
+  width: 932px;
+  left: 50%;
+  bottom: 0px;
+  margin-left: -467px;
+}
+
+#sponsor #register {
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  bottom: 50px;
 /*200 x 75 px*/
 }

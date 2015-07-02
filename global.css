@@ -130,20 +130,59 @@ header #menu {
 
 #register-bird {
   position: relative;
-  height: 100px;
+  height: 129px;
+  text-align: center;
 }
 
-#register-bird #bird{
+#register-bird #bird img {
   position: absolute;
   left: 50%;
-  margin-left: -5px;
+  margin-left: -20px;
+  height: 42px;
+  margin-top: -20px;
 }
-#register-bird #lines{
+#register-bird #lines img{
   position: absolute;
   left: 50%;
   margin-left: -230px;
-  height: inherit;
+  opacity: 1;
 }
+
+#register-bird #register {
+  border-radius: 50px;  /*rounded button */
+  background: #6BA235; /*bright green */
+  color: white;
+  font-size: 20px;
+  height: 55px;
+  width: 200px;
+  text-align: center;
+  vertical-align: middle;  /* center text vertically in element */
+  line-height: 55px;       /*same as height of element */
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#register-bird #register:hover {
+    background: #A7C887;
+}
+
+#register-bird #cost {
+  display: block;
+  color: #6BA235;
+  font-size: 80px;
+  position: relative;
+
+}
+
+#register-bird #cost p {
+  position: absolute;
+  top: 36px;
+  left: 46%;
+  font-size: 36px;
+  top: -20px;
+  left: 40%;
+}
+
 
 .space {
   padding: 50px;
@@ -172,7 +211,7 @@ p {
   margin-right: auto;
   width: 95%;
   height: 10px;
-  background-image: url("./assets/part2/dash-horizontal.png");
+  background-image: url("./assets/page1/dash-horizontal.png");
   background-repeat: repeat-x;
 }
 
@@ -215,7 +254,7 @@ p {
 
 
 #event-schedule {
-  background-image: url("./assets/part3/wood-bg.png");  /*wood repeats 13 times down.  Set height to 250*13 */
+  background-image: url("./assets/page3/board.jpg");  /*wood repeats 13 times down.  Set height to 250*13 */
   height: 3250px;
   text-align: center;
   margin-left: auto;
@@ -288,40 +327,42 @@ p {
 #faq {
   background: #CAECF8; /*background color light blue*/
   color: #764C31; /*text color brown to match FAQ */
+  min-height: 900px;
+  position: relative;
 
 }
 
 #faq #faq-img img {
   margin-left: auto;
   margin-right: auto;
+  width: 200px;
 }
 
-/*#faq #faq-questions {
-  margin-left: auto;
-  margin-right: auto;
-  vertical-align: middle;
-}*/
-
-#faq #faq-questions .questions {
+#faq #faq-questions {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
   height: 50px;
-  background-image: url("./assets/part4/plus-bullet.png");
-  background-repeat: no-repeat;
-}
-
-#faq #faq-questions .questions p {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  list-style-image: url("./assets/page4/plus-bullet.png");
   font-family: "Rokkitt",Helvetica,Arial,sans-serif;
   font-size: 24px;
+  font-weight: bold;
 }
 
-#faq .space {
-  padding: 10px;
+#faq #faq-questions li {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
+
+#faq #treehouse {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  max-width: 450px;
+}
+
 
 #register img {
   width: 100%;

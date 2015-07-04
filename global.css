@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   padding: 0px;
   margin: 0px;   /* prevents site from expanding to the edge of the screen */
@@ -41,7 +46,6 @@ header #menu {
   position: relative;
   margin-right: auto;
   margin-left: auto;
-  height: 435px;
   max-width: 1400px;
   
 }
@@ -76,13 +80,6 @@ header #menu {
   height: inherit;
 }
 
-#hero-container #logo img {
-  height: 70%;
-  position: relative;
-  left: 132%;
-  top: 5%;
-}
-
 #hero-container #kaneko {
   max-width: inherit;
   position: relative;
@@ -92,18 +89,16 @@ header #menu {
   z-index: 8;
   line-height: 1.4em;
   margin: 0px;
-  padding: 0px;
 }
+
 #hero-container #kaneko h3 {
   font-size: 28px;
   margin: inherit;
-  padding: inherit;
 }
 
 #hero-container #kaneko p {
   font-size: 20px;
   margin: inherit;
-  padding: inherit;
 }
 
 #hero-container #date img {
@@ -113,7 +108,6 @@ header #menu {
   top: 310px;
   
 }
-
 
 #aiga {
   background: #536463; /* grey - matches the background color to the color of the image */
@@ -185,7 +179,7 @@ header #menu {
 
 
 .space {
-  padding: 50px;
+  padding: 10%;
 }
 
 h1 {
@@ -219,25 +213,29 @@ p {
   width: 90%;
 }
 
+
+
+#talks-organized {
+  text-align: center;
+}
+
 .talk-type {
  color: #6C5029; 
  line-height: 2em;
  font-size: 16px;
  font-family: "proxima-nova", Arial,sans-serif;
  text-align: center;
+ width: 390px;
+ margin-right: auto;
+ margin-left: auto;
+ border-bottom: 2px #DDDDDD solid;
 }
 
-.talk-type .space {
-  border-bottom: 2px #DDDDDD solid;
-}
-
-#talks-organized {
-  text-align: center;
-}
 
 .talk-type img {
   margin-right: auto;
   margin-left: auto;
+  width: 60%;
 }
 
 .talk-type ul {
@@ -264,6 +262,7 @@ p {
 #event-schedule img {
   padding-top: 50px;
   width: 85%;
+  max-width: 468px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -384,4 +383,125 @@ p {
   width: 200px;
   bottom: 50px;
 /*200 x 75 px*/
+}
+
+#register-last-page a {
+  position: absolute;
+  height: 80px;
+  top: 55px;
+  width: 100%;
+}
+
+
+@media (min-width: 900px) {
+   #at-bar-camp, #register-bird {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (max-width: 780px){
+  #hero-container {
+    height: 435px;
+  }
+  
+  #hero-container #logo img {
+    height: 70%;
+    position: relative;
+    left: 50%;
+    bottom: -7%;
+    margin-left: 117px; 
+    /*(-420px, which is 70% of the width + 403px, which is the width of half of the background image.)*/
+  }
+}
+
+@media (min-width: 780px) {
+  #hero-container {
+    width: 100%;
+  }
+  #hero-container .background-image {
+    left: 0px;
+    top: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  
+  #hero-container #logo {
+    left: 50%;
+    width: 50%;
+    margin: 70px 0px 0px -12.5%;
+    margin-top: 4%
+  }
+  
+  #hero-container #kaneko {
+    top: 0px;
+    padding-top: 40%;
+  }
+  
+  #hero-container #date img {
+    top: 0px;
+  }
+  
+  #aiga {
+    position: relative;
+  }
+  
+  #aiga img {
+    position: absolute;
+    right: 0px;
+    z-index: 8; 
+  }
+  
+  .talk-type {
+    float: left;
+    width: 50%;
+    border-left: 1px #DDDDDD solid;
+    border-right: 1px #DDDDDD solid;
+  }
+  
+  #sponsor #register-last-page {
+    width: 50%;
+    margin-left: -10%;
+  }
+  
+  
+  #register-last-page a {
+    height: 30%;
+    top: 22%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  
+  .talk-type {
+    width: 25%;
+    border: none;
+  }
+  
+  .space {
+    padding: 7%;
+  }
+  
+  #event-schedule {
+    height: 1700px;
+  }
+  
+  #event-schedule .event {
+    float: left;
+    width: 40%;
+    padding: 0 5%;
+  }
+  
+  #faq #treehouse {
+    padding-left: 30%;
+    width: auto;
+    max-width: none;
+    position: relative;
+  }
+  
+  #treehouse img {
+    width: auto;
+    padding-right: 400px;
+  }
 }

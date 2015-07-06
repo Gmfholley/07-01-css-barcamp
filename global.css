@@ -2,22 +2,19 @@
   box-sizing: border-box;
 }
 
-
 body {
   padding: 0px;
   margin: 0px;   /* prevents site from expanding to the edge of the screen */
   
   font-family: "Rokkitt",Helvetica,Arial,sans-serif;
   color: #6B797F;
-  width: 100%;
-  
+  width: 100%;  
 }
 
 img {
   display: block;   /* takes out spaces between images */
   width: inherit;
 }
-
 
 header {
   top: 0;  /* set the top to 0, the position to fixed, and the height to some px that matches the margin-top of the  div just below this to have a fixed header */
@@ -142,7 +139,7 @@ header #menu {
   opacity: 1;
 }
 
-#register-bird #register {
+#register-bird #register a {
   border-radius: 50px;  /*rounded button */
   background: #6BA235; /*bright green */
   color: white;
@@ -154,10 +151,11 @@ header #menu {
   line-height: 55px;       /*same as height of element */
   display: inline-block;
   margin-top: 20px;
+  text-decoration: none;
 }
 
-#register-bird #register:hover {
-    background: #A7C887;
+a:hover {
+    opacity: .6;
 }
 
 #register-bird #cost {
